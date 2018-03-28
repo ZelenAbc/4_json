@@ -1,17 +1,31 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+Script restructures JSON string with key sorting and 4-space indentation.
 
 # Quickstart
 
-[TODO]
-
-Example of script launch on Linux, Python 3.5:
-
 ```bash
-
-$ python pprint_json.py <path to file>
-# TODO add output example
+$ cat test.json
+```
+```json
+["foo", {"bar":["baz", null, 1.0, 2]}]
+```
+Example of script launch on Linux, Python 3.5:
+```bash
+$ python pprint_json.py test.json
+```
+```json
+[
+    "foo",
+    {
+        "bar": [
+            "baz",
+            null,
+            1.0,
+            2
+        ]
+    }
+]
 
 ```
 
