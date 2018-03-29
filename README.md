@@ -10,11 +10,24 @@ $ cat test.json
 ```json
 ["foo", {"bar":["baz", null, 1.0, 2]}]
 ```
-Example of script launch on Linux, Python 3.5:
+Usage :
+
 ```bash
-$ python pprint_json.py test.json
+$ int_json.py -h
+usage: pprint_json.py [-h] [-f DATA_FILE]
+
+Convert JSON data to human-readable form
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f DATA_FILE, --data_file DATA_FILE
+                        path to file with JSON string, default: ./test.json
 ```
+Example of script launch on Linux, Python 3.5:
+
+
 ```json
+$ python pprint_json.py 
 [
     "foo",
     {
@@ -26,6 +39,7 @@ $ python pprint_json.py test.json
         ]
     }
 ]
+
 
 ```
 
