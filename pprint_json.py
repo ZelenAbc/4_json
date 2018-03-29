@@ -31,7 +31,7 @@ def get_arg_parser():
     arg_parser = argparse.ArgumentParser(description='Convert JSON data to human-readable form')
     arg_parser.add_argument('-f', '--data_file',
                             action=FileExist, default=default_file_path,
-                            help='path to file with JSON string')
+                            help='path to file with JSON string, default: ./test.json')
     return arg_parser
 
 
